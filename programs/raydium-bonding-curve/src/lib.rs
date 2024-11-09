@@ -1,7 +1,11 @@
 use anchor_lang::prelude::*;
-mod consts;
-mod errors;
-mod state;
+
+pub mod consts;
+pub mod errors;
+pub mod state;
+pub mod utils;
+pub mod instructions;
+
 
 declare_id!("FnVRGapn2YBV7C74H7SyPcYi9Nn3cpc38F2DdEEStTL8");
 
@@ -14,6 +18,3 @@ pub mod raydium_bonding_curve {
         Ok(())
     }
 }
-
-#[derive(Accounts)]
-pub struct Initialize {}
